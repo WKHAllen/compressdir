@@ -99,6 +99,7 @@ def compress(path, newpath=None, maximumCompression=False, ext=".compressed", de
         f.write(data)
     if deleteOld:
         os.remove(path)
+    return newpath
 
 def decompressed(data, newpath=None):
     '''Decompress a byte string compression of a file or directory.'''
@@ -107,9 +108,10 @@ def decompressed(data, newpath=None):
     data = bz2.decompress(data)
     data = pickle.loads(data)
     dictToDir(newpath, data)
+    return newpath
 
 def decompress(path, newpath=None, deleteOld=False):
-    '''Decompress a file or directory.'''
+    '''Decompress a compressed file or directory.'''
     if newpath is None:
         newpath = os.path.split(path)[0]
     with open(path, "rb") as f:
@@ -117,3 +119,4 @@ def decompress(path, newpath=None, deleteOld=False):
     decompressed(data, newpath)
     if deleteOld:
         os.remove(path)
+    return newpath
