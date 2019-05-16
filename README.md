@@ -1,14 +1,9 @@
-Compress Directories
-====================
-
-Source: [https://github.com/WKHAllen/compressdir](https://github.com/WKHAllen/compressdir)
-
-Contents
---------
+# Compress Directories
 
 Compress and decompress files and directories.
 
-Installation
-------------
+Source: [https://github.com/WKHAllen/compressdir](https://github.com/WKHAllen/compressdir)
 
-`$ pip install compressdir`
+### Installation
+
+`pip install compressdir`
