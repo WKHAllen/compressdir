@@ -1,7 +1,7 @@
 Compress Directories
 ====================
 
-Source: `github.com/WKHAllen/compressdir <https://github.com/WKHAllen/compressdir>`_
+Source: [github.com/WKHAllen/compressdir](https://github.com/WKHAllen/compressdir)
 
 Contents
 --------
