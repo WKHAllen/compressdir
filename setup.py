@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name = 'compressdir',
     packages = ['compressdir'],
-    version = '0.1.2',
+    version = '0.1.3',
     license = 'MIT',
     description = 'File/directory compression',
     long_description = ''.join(open('README.md', encoding='utf-8').readlines()),
